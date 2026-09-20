@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abhishek Kumar - CSE Student | B.Tech CSE | Personal Portfolio" />
+  <meta name="author" content="Abhishek Kumar" />
+  <title>Abhishek Kumar | CSE Student Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ==================== PRELOADER ==================== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="loader-ring"></div>
+      <span class="loader-text">AK</span>
+    </div>
+  </div>
+
+  <!-- ==================== SCROLL PROGRESS BAR ==================== -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ==================== CUSTOM CURSOR ==================== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- ==================== HEADER / NAVBAR ==================== -->
+  <header class="header" id="header">
+    <nav class="navbar container" aria-label="Primary Navigation">
+      <a href="#home" class="logo" aria-label="Abhishek Kumar Home">
+        <span class="logo-mark">AK</span>
+        <span class="logo-text">Abhishek<span class="accent">.</span></span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li class="nav-item"><a href="#hobbies" class="nav-link">Hobbies</a></li>
+        <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-nav">Hire Me</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main>
+
+    <!-- ==================== HOME / HERO SECTION ==================== -->
+    <section class="hero section" id="home">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <p class="hero-greeting reveal">
+            <span class="wave">👋</span> Hello, I'm
+          </p>
+
+          <h1 class="hero-title reveal">
+            Abhishek <span class="gradient-text">Kumar</span>
+          </h1>
+
+          <h2 class="hero-subtitle reveal">
+            <span class="typed-text" id="typedText"></span>
+            <span class="cursor-blink">|</span>
+          </h2>
+
+          <p class="hero-desc reveal">
+            A passionate <strong>B.Tech CSE Student</strong> who loves building modern web
+            experiences, exploring AI tools, and turning creative ideas into reality through
+            code and design.
+          </p>
+
+          <div class="hero-cta reveal">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-rocket"></i> View My Work
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-solid fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+
+          <div class="hero-stats reveal">
+            <div class="stat-card">
+              <h3 class="stat-number" data-count="13">0</h3>
+              <p class="stat-label">Skills</p>
+            </div>
+            <div class="stat-card">
+              <h3 class="stat-number" data-count="4">0</h3>
+              <p class="stat-label">Certificates</p>
+            </div>
+            <div class="stat-card">
+              <h3 class="stat-number" data-count="14">0</h3>
+              <p class="stat-label">Trophy</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-image-wrapper">
+            <div class="hero-image-ring"></div>
+            <div class="hero-image-glow"></div>
+            <img
+              src="images/profile.jpg"
+              alt="Abhishek Kumar Profile Photo"
+              class="hero-image"
+              loading="eager"
+            />
+            <div class="floating-badge badge-1">
+              <i class="fa-solid fa-code"></i>
+              <span>CSE</span>
+            </div>
+            <div class="floating-badge badge-2">
+              <i class="fa-solid fa-trophy"></i>
+              <span>Cricket</span>
+            </div>
+            <div class="floating-badge badge-3">
+              <i class="fa-solid fa-camera"></i>
+              <span>Photo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-down" aria-label="Scroll to About">
+        <span class="mouse">
+          <span class="wheel"></span>
+        </span>
+        <span class="scroll-text">Scroll Down</span>
+      </a>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Get To Know</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-visual reveal">
+            <div class="about-image-card">
+              <img
+                src="images/profile.jpg"
+                alt="Abhishek Kumar"
+                class="about-image"
+                loading="lazy"
+              />
+              <div class="about-image-overlay"></div>
+            </div>
+            <div class="about-exp-badge">
+              <span class="exp-number">B.Tech</span>
+              <span class="exp-text">CSE Student</span>
+            </div>
+          </div>
+
+          <div class="about-content reveal">
+            <h3 class="about-heading">
+              A curious mind crafting <span class="accent">digital solutions</span>
+            </h3>
+
+            <p class="about-text">
+              Hi! I'm <strong>Abhishek Kumar</strong>, a B.Tech Computer Science & Engineering
+              student with a strong passion for technology, creativity, and continuous learning.
+              I enjoy building responsive websites, solving programming problems, and exploring
+              the latest advancements in AI.
+            </p>
+
+            <p class="about-text">
+              Beyond coding, I'm an avid <strong>cricketer</strong>, a photography enthusiast,
+              and a video editing lover. I believe in balancing logic with creativity — and
+              that's exactly what I bring to every project I work on.
+            </p>
+
+            <div class="about-info-grid">
+              <div class="info-item">
+                <i class="fa-solid fa-user"></i>
+                <div>
+                  <span class="info-label">Name</span>
+                  <span class="info-value">Abhishek Kumar</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div>
+                  <span class="info-label">Course</span>
+                  <span class="info-value">B.Tech CSE</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                  <span class="info-label">Phone</span>
+                  <span class="info-value">9006744604</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <span class="info-label">Email</span>
+                  <span class="info-value">guptaabhishek63501@gmail.com</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-cta">
+              <a href="#contact" class="btn btn-primary">
+                <i class="fa-solid fa-handshake"></i> Let's Connect
+              </a>
+              <a href="resume/abhishek-kumar-resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+  <i class="fa-solid fa-file-lines"></i> View Resume
+</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">What I Know</span>
+          <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+            <h3 class="skill-name">HTML</h3>
+            <div class="skill-bar"><span data-width="95%"></span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+            <h3 class="skill-name">CSS</h3>
+            <div class="skill-bar"><span data-width="90%"></span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+            <h3 class="skill-name">JavaScript</h3>
+            <div class="skill-bar"><span data-width="85%"></span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-c"></i></div>
+            <h3 class="skill-name">C</h3>
+            <div class="skill-bar"><span data-width="88%"></span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+            <h3 class="skill-name">C++</h3>
+            <div class="skill-bar"><span data-width="85%"></span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
+            <h3 class="skill-name">Java</h3>
+            <div class="skill-bar"><span data-width="80%"></span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+            <h3 class="skill-name">Git / GitHub</h3>
+            <div class="skill-bar"><span data-width="82%"></span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-image"></i></div>
+            <h3 class="skill-name">Photoshop</h3>
+            <div class="skill-bar"><span data-width="78%"></span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-video"></i></div>
+            <h3 class="skill-name">Video Editing</h3>
+            <div class="skill-bar"><span data-width="80%"></span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-camera-retro"></i></div>
+            <h3 class="skill-name">Photography</h3>
+            <div class="skill-bar"><span data-width="85%"></span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-robot"></i></div>
+            <h3 class="skill-name">AI Tools & Prompting</h3>
+            <div class="skill-bar"><span data-width="88%"></span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-file-word"></i></div>
+            <h3 class="skill-name">MS Word</h3>
+            <div class="skill-bar"><span data-width="90%"></span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-file-excel"></i></div>
+            <h3 class="skill-name">Excel</h3>
+            <div class="skill-bar"><span data-width="85%"></span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-file-powerpoint"></i></div>
+            <h3 class="skill-name">PowerPoint</h3>
+            <div class="skill-bar"><span data-width="88%"></span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">My Work</span>
+          <h2 class="section-title">Latest <span class="gradient-text">Projects</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-icon">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-desc">
+              A fully responsive, modern and animated personal portfolio built using HTML,
+              CSS and JavaScript with smooth scrolling and premium UI.
+            </p>
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-icon">
+              <i class="fa-solid fa-calculator"></i>
+            </div>
+            <h3 class="project-title">Trader Utility Calculator</h3>
+            <p class="project-desc">
+              An all-in-one trading calculator for Profit & Loss, Risk-Reward, Position Size,
+              Brokerage, SIP, Capital Allocation, and other essential calculations.
+            </p>
+            <ul class="project-tags">
+                <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-icon">
+              <i class="fa-solid fa-list-check"></i>
+            </div>
+            <h3 class="project-title">Abhi quiz portal</portal></h3>
+            <p class="project-desc">
+              A responsive online quiz platform where students can attempt interactive quizzes,
+              test their knowledge, view instant results, and download certificates after
+              completing the required quiz criteria through a simple and user-friendly interface.
+            </p>
+            <ul class="project-tags">
+                <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3 class="project-title">MyGov India</h3>
+            <p class="project-desc">
+              Hackathon project inspired by the MyGov India portal, featuring a responsive
+              Hackathon project inspired by the MyGov India portal, featuring a responsive
+              and responsive web development.
+            </p>
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-icon">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <h3 class="project-title">Brain Battle Abhi</h3>
+            <p class="project-desc">
+              An interactive quiz platform where users can test their knowledge, solve engaging
+              questions, view instant results, and improve their performance through a
+              competitive learning experience.
+            </p>
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3 class="project-title">Coders world portal</h3>
+            <p class="project-desc">
+             A student registration portal where classmates can register to join the Coders World
+             community. Designed with a simple, responsive interface to make student
+             registration easy and accessible.
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICATES & ACHIEVEMENTS SECTION ==================== -->
+    <section class="certificates section" id="certificates">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Milestones</span>
+          <h2 class="section-title">Certificates & <span class="gradient-text">Achievements</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="certificates-grid">
+          <article class="certificate-card reveal">
+            <div class="certificate-image-wrapper">
+              <img
+                src="images/photography.jpg"
+                alt="Photography Certificate"
+                class="certificate-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="certificate-info">
+              <span class="certificate-badge">Certificate</span>
+              <h3 class="certificate-title">Photography</h3>
+              <p class="certificate-desc">
+                Recognized for creativity and excellence in photography.
+              </p>
+            </div>
+          </article>
+
+          <article class="certificate-card reveal">
+            <div class="certificate-image-wrapper">
+              <img
+                src="images/codearena-2026.jpg"
+                alt="Code Arena 2026 Certificate"
+                class="certificate-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="certificate-info">
+              <span class="certificate-badge">Certificate</span>
+              <h3 class="certificate-title">Code Arena 2026</h3>
+              <p class="certificate-desc">
+                Participated and showcased coding skills at Code Arena 2026.
+              </p>
+            </div>
+          </article>
+
+          <article class="certificate-card reveal">
+            <div class="certificate-image-wrapper">
+              <img
+                src="images/innospeak-2026.jpg"
+                alt="InnoSpeak 2026 Certificate"
+                class="certificate-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="certificate-info">
+              <span class="certificate-badge">Certificate</span>
+              <h3 class="certificate-title">InnoSpeak 2026</h3>
+              <p class="certificate-desc">
+                Awarded for innovation and public speaking excellence.
+              </p>
+            </div>
+          </article>
+
+          <article class="certificate-card reveal">
+            <div class="certificate-image-wrapper">
+              <img
+                src="images/c-warrior.jpg"
+                alt="C Warrior Certificate"
+                class="certificate-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="certificate-info">
+              <span class="certificate-badge">Certificate</span>
+              <h3 class="certificate-title">C Warrior</h3>
+              <p class="certificate-desc">
+                Successfully completed the C programming challenge.
+              </p>
+            </div>
+          </article>
+
+          <article class="certificate-card achievement-card reveal">
+            <div class="certificate-image-wrapper">
+              <img
+                src="images/cricket-cup.jpg"
+                alt="Cricket Cup Achievement"
+                class="certificate-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="certificate-info">
+              <span class="certificate-badge trophy-badge">
+                <i class="fa-solid fa-trophy"></i> Achievement
+              </span>
+              <h3 class="certificate-title">Cricket Cup Winner</h3>
+              <p class="certificate-desc">
+                Proud winner of the Cricket Cup — a testament to teamwork,
+                dedication and sportsmanship.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== HOBBIES SECTION ==================== -->
+    <section class="hobbies section" id="hobbies">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Beyond Code</span>
+          <h2 class="section-title">My <span class="gradient-text">Hobbies</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="hobbies-grid">
+          <article class="hobby-card hobby-featured reveal">
+            <div class="hobby-icon">
+              <i class="fa-solid fa-baseball-bat-ball"></i>
+            </div>
+            <h3 class="hobby-title">Cricket</h3>
+            <p class="hobby-desc">
+              Cricket is more than a hobby — it's my passion. It taught me teamwork,
+              discipline, patience and the spirit to never give up.
+            </p>
+            <div class="hobby-tagline">
+              <i class="fa-solid fa-trophy"></i> Cricket Cup Winner
+            </div>
+          </article>
+
+          <article class="hobby-card reveal">
+            <div class="hobby-icon">
+              <i class="fa-solid fa-camera-retro"></i>
+            </div>
+            <h3 class="hobby-title">Photography</h3>
+            <p class="hobby-desc">
+              Capturing moments and telling stories through the lens.
+            </p>
+          </article>
+
+          <article class="hobby-card reveal">
+            <div class="hobby-icon">
+              <i class="fa-solid fa-video"></i>
+            </div>
+            <h3 class="hobby-title">Video Editing</h3>
+            <p class="hobby-desc">
+              Turning raw clips into cinematic experiences with creative edits.
+            </p>
+          </article>
+
+          <article class="hobby-card reveal">
+            <div class="hobby-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3 class="hobby-title">Coding</h3>
+            <p class="hobby-desc">
+              Building projects and solving problems — one line of code at a time.
+            </p>
+          </article>
+
+          <article class="hobby-card reveal">
+            <div class="hobby-icon">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <h3 class="hobby-title">Exploring AI</h3>
+            <p class="hobby-desc">
+              Learning new AI tools and experimenting with prompting techniques.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== RESUME SECTION ==================== -->
+    <section class="resume section" id="resume">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">My Journey</span>
+          <h2 class="section-title">Resume & <span class="gradient-text">Education</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="resume-grid">
+          <div class="resume-column reveal">
+            <h3 class="resume-column-title">
+              <i class="fa-solid fa-graduation-cap"></i> Education
+            </h3>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <span class="timeline-date">Present</span>
+                  <h4 class="timeline-title">B.Tech in Computer Science & Engineering</h4>
+                  <p class="timeline-desc">
+                    Pursuing B.Tech CSE with focus on programming, web development,
+                    and emerging technologies.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <span class="timeline-date">Senior Secondary</span>
+                  <h4 class="timeline-title">Higher Secondary Education</h4>
+                  <p class="timeline-desc">
+                    Completed schooling with a strong foundation in Science and Mathematics.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-column reveal">
+            <h3 class="resume-column-title">
+              <i class="fa-solid fa-briefcase"></i> Experience & Learning
+            </h3>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <span class="timeline-date">2026</span>
+                  <h4 class="timeline-title">Web Development Projects</h4>
+                  <p class="timeline-desc">
+                    Built multiple responsive websites and web apps using HTML, CSS
+                    and JavaScript.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <span class="timeline-date">2026</span>
+                  <h4 class="timeline-title">Coding Competitions</h4>
+                  <p class="timeline-desc">
+                    Participated in Code Arena 2026 and InnoSpeak 2026, showcasing
+                    coding and innovation skills.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <span class="timeline-date">Ongoing</span>
+                  <h4 class="timeline-title">AI Tools & Prompting</h4>
+                  <p class="timeline-desc">
+                    Continuously exploring AI tools and prompt engineering to boost
+                    productivity and creativity.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume-download reveal">
+  <a href="resume/abhishek-kumar-resume.pdf" download="abhishek-kumar-resume.pdf" class="btn btn-primary btn-lg" aria-label="Download Resume">
+    <i class="fa-solid fa-download"></i> Download Resume
+  </a>
+</div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3 class="contact-heading">Let's build something amazing together!</h3>
+            <p class="contact-text">
+              I'm always open to new opportunities, collaborations and creative
+              projects. Feel free to reach out anytime.
+            </p>
+
+            <div class="contact-cards">
+              <a href="tel:9006744604" class="contact-card">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="contact-detail">
+                  <span class="contact-label">Phone</span>
+                  <span class="contact-value">9006744604</span>
+                </div>
+              </a>
+
+              <a href="mailto:guptaabhishek63501@gmail.com" class="contact-card">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-detail">
+                  <span class="contact-label">Email</span>
+                  <span class="contact-value">guptaabhishek63501@gmail.com</span>
+                </div>
+              </a>
+
+              <div class="contact-card">
+                <div class="contact-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="contact-detail">
+                  <span class="contact-label">Course</span>
+                  <span class="contact-value">B.Tech CSE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Your Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                class="form-input"
+                placeholder="Enter subject"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-input form-textarea"
+                rows="5"
+                placeholder="Write your message..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SOCIAL LINKS SECTION ==================== -->
+    <section class="social section" id="social">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Stay Connected</span>
+          <h2 class="section-title">Social <span class="gradient-text">Links</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="social-grid">
+          <a href="https://github.com/apexabhi54-cloud/corder-world-portal/settings/pages" target="_blank" rel="noopener noreferrer" class="social-card reveal" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+            <span class="social-name">GitHub</span>
+          </a>
+
+          <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" class="social-card reveal" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <span class="social-name">LinkedIn</span>
+          </a>
+
+          <a href="https://www.instagram.com/sniper_boy_abhishek/" target="_blank" rel="noopener noreferrer" class="social-card reveal" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+            <span class="social-name">Instagram</span>
+          </a>
+          <a href="https://www.facebook.com/share/1EdCCqnewN/" target="_blank" rel="noopener noreferrer" class="social-card reveal" aria-label="Instagram">
+            <i class="fa-brands fa-facebook"></i>
+            <span class="social-name">fa-facebook</span>
+          </a>
+
+          <a href="https://x.com/Abhishe07852265" target="_blank" rel="noopener noreferrer" class="social-card reveal" aria-label="Twitter / X">
+            <i class="fa-brands fa-x-twitter"></i>
+            <span class="social-name">Twitter / X</span>
+          </a>
+
+          <a href="https://youtube.com/@gangadwarmurauwatpur?si=cXARTZPRX27oKsav" target="_blank" rel="noopener noreferrer" class="social-card reveal" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+            <span class="social-name">YouTube</span>
+          </a>
+
+          <a href="mailto:guptaabhishek63501@gmail.com" class="social-card reveal" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+            <span class="social-name">Email</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-mark">AK</span>
+          <span class="logo-text">Abhishek<span class="accent">.</span></span>
+        </a>
+        <p class="footer-tagline">
+          B.Tech CSE Student • Web Developer • Creative Mind
+        </p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="footer-social">
+        <a href="https://github.com/apexabhi54-cloud/corder-world-portal/settings/pages" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/sniper_boy_abhishek/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/1EdCCqnewN/" target="_blank" rel="noopener noreferrer" aria-label="facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="mailto:guptaabhishek63501@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        &copy; <span id="year"></span> <strong>Abhishek Kumar</strong>. All Rights Reserved.
+      </p>
+      <p class="footer-made">
+        Made with <i class="fa-solid fa-heart"></i> by Abhishek Kumar
+      </p>
+    </div>
+  </footer>
+
+  <!-- ==================== BACK TO TOP ==================== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ==================== SCRIPT ==================== -->
+  <script src="script.js"></script>
+</body>
+</html>
